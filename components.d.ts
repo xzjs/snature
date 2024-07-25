@@ -7,6 +7,20 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    NutButton: typeof import('@nutui/nutui-taro')['Button']
+    Home: typeof import('./src/components/Home.vue')['default']
+    Item: typeof import('./src/components/Item.vue')['default']
+    List: typeof import('./src/components/List.vue')['default']
+    Message: typeof import('./src/components/Message.vue')['default']
+    Mine: typeof import('./src/components/Mine.vue')['default']
+    Nature: typeof import('./src/components/Nature.vue')['default']
+    NutAvatar: typeof import('@nutui/nutui-taro')['Avatar']
+    NutSpace: typeof import('@nutui/nutui-taro')['Space']
+    NutTabbar: typeof import('@nutui/nutui-taro')['Tabbar']
+    NutTabbarItem: typeof import('@nutui/nutui-taro')['TabbarItem']
+    NutTabPane: typeof import('@nutui/nutui-taro')['TabPane']
+    NutTabs: typeof import('@nutui/nutui-taro')['Tabs']
+    NutTag: typeof import('@nutui/nutui-taro')['Tag']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }
